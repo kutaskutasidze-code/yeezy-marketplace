@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-yeezy-cream text-yeezy-carbon antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 bg-yeezy-carbon text-yeezy-cream hover:bg-yeezy-earth transition-colors duration-300 uppercase tracking-wider text-sm font-medium;
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-4 border-2 border-yeezy-carbon text-yeezy-carbon hover:bg-yeezy-carbon hover:text-yeezy-cream transition-all duration-300 uppercase tracking-wider text-sm font-medium;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 bg-transparent border-b-2 border-yeezy-stone focus:border-yeezy-carbon outline-none transition-colors duration-200 text-yeezy-carbon placeholder-yeezy-earth;
+  }
+  
+  .card {
+    @apply bg-yeezy-sand p-6 transition-transform duration-300 hover:-translate-y-1;
+  }
+}
